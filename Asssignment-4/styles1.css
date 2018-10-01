@@ -1,0 +1,575 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  .wrapper {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+
+
+ 
+/**************header ********************/
+
+
+header {
+    height: 60px; 
+    width: 100%;
+    background: blue;
+  
+   
+}
+.icon-container {
+    width:10%;
+    float: left;
+}
+
+
+
+
+.logo {
+    height: 70px;
+    width: 200px;
+    margin-right: auto;
+    color: orange;   
+    white-space: nowrap;  
+}
+
+
+.logo span.title {
+    display: center;
+    font-weight: 700;
+    margin-right: 20px;
+    display: center; 
+    padding-right: 1em;
+    padding-top: 1em;
+   
+}
+
+
+.logo i {
+    padding-right: .1em;
+    margin-top:  .3em;
+    margin-bottom: 10px;
+    padding-bottom: 2em;
+    padding-left: 0;
+   
+    
+
+}
+
+
+ 
+
+header ul.navbar {
+    display: inline;
+   /** padding: 0; ***/
+    
+}
+
+
+
+
+header ul.navbar li.navhead {
+    list-style-type: none;
+    float: right;
+
+  /********  background: yellow; ******/
+   
+    width: 13%;
+    margin-bottom: .5em;
+    padding-top: 1em;
+    padding-left: 1em;
+    align-items: flex-end;
+    margin-right: .1em;
+}
+
+ul.navbar li.navhead a {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.icon-container,
+.hamburger-menu {
+    background: transparent;
+    border: none;
+    display: none;
+    padding-top: 1em;
+    color: black;
+    top: 0;
+    right: 0; 
+
+}
+
+.hamburger-menu {
+    float: right;
+}
+
+  
+@media screen and (min-width: 200px) and (max-width: 800px) {
+    
+    header ul.navbar {
+        display: none;
+    }
+
+    .mobile-menu ul {
+        display: block;
+        
+    }
+    .hamburger-menu {
+        display: block;
+        padding-left: 0;
+        margin-left: 0;
+        
+    }
+}
+
+
+
+
+
+/************************* Mobile Menu************************/
+
+.desktop-nav {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+}
+
+
+
+
+
+.menu a {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    
+}
+
+.icon-container {
+    height: 30px;
+    flex: 0 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.open-button {
+    border: none;
+    background: transparent;
+    color: rgb(32, 31, 31);
+}
+
+
+.mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 90vh;
+    width: 230px;
+    background: white;
+    transition: 0.3s;
+    padding: 20px;
+
+}
+
+.mobile-menu ul {
+
+    text-decoration: none;
+    display: block;
+    padding-left: 0;
+    padding-right: 2em;
+  
+    
+
+}
+
+
+.mobile-menu ul li {
+  
+    list-style-type: none;
+    background: yellow;
+    margin-bottom: .3em;
+    padding-right: 3em;
+   
+  
+    width: 250px;
+  
+}
+
+
+.mobile-menu a {
+    font-family: Arial, sans-serif;
+    color: #888;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px 0;
+    font-size: 0.8em;
+   
+    text-decoration: none;
+    text-align: center;
+  
+}
+
+.closed {
+    transform: translate(230px, 0);
+}
+
+button#close-button {
+    background: blue;
+}
+
+
+
+
+
+
+
+
+/********Hero**   { } ***************************************************/
+
+
+.hero { 
+
+    height: 600px;
+    background: white;
+    background-position: center;
+   
+    margin-top: 6em;
+    background: linear-gradient(
+        80deg,
+        rgba(0,0,0,0.4), 
+        rgba(0,0,0,0)
+        ),
+        url("./Images/car-0.jpg"); 
+    
+    background-size: cover;
+}
+
+
+
+.hero-content  { 
+    padding: 3em 0;
+    
+}
+
+
+hr {
+  border: 2px solid red;
+  width: 60%;
+ 
+ padding-left: 5em;
+ 
+ } 
+
+ .hero-content, h2 { 
+    color: white;
+    align-items: flex-end;
+    padding-top: 2em;
+    padding-right: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+p.from-hero, h2 { 
+    padding-left: 13em;
+} 
+
+button  { 
+    background: red;
+    align-items: flex-end;
+   
+    margin-left: 20em;
+
+} 
+h2.from-hero1 {
+    padding-right: 22em;
+}
+
+img {
+    width: 250px;
+    height: 200px;
+    margin-left: .4em;
+    
+} 
+
+@media screen (min-width: 200px) and (max-width: 1000px) {
+    .hero, 
+    .hero-content, 
+    p.from-hero,
+    .hero1, .from-hero1 {
+        width: 100%;
+    }
+}
+
+
+/*** Main****      { } *******************************/
+
+main {
+    height: 1000px;
+    width: 1000px;
+    background: white; 
+    margin: 2em 0;
+ } 
+ 
+ main h2, p {
+    display: center;  
+    text-align: justify;  
+} 
+
+.main-content {
+
+    background: grey;
+} 
+
+
+@media (min-width: 300px) and (max-width: 100px) {
+    main, h2, p {
+        width: 100%;
+    }
+}
+
+ 
+
+.content { 
+    width: 250px;
+    height: 40px;
+    background: #ccc;
+}
+
+h5, { 
+    color: black;
+    margin-left: 1em;
+   
+   
+   
+}
+
+.about-icon  {
+    padding-top: 5em;
+    margin-bottom: 5em;
+    align-items: flex-start;
+    
+    
+}
+
+ hr.about {
+    width: 60em;
+    border: 1px solid black;
+
+}
+
+
+p.about { 
+    margin-bottom: 5em;
+}
+
+
+.row {
+    padding-right: .2em;
+}
+
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    background: #888;
+    padding-right: .2em;
+   
+}
+
+/* Clearfix (clear floats) */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+p, h5 {
+    padding-left: 2em;
+    margin-left: .5em;
+}
+
+
+
+/*** Main product   { } *******************************/
+
+
+.hero1 { 
+
+    height: 600px;
+    background: rgb(226, 221, 221);
+    background-position: center;
+   
+    margin-top: 6em;
+    background: linear-gradient(
+        90deg,
+        rgba(0,0,0,0.4), 
+        rgba(0,0,0,0)
+        ),
+        url("./Images/car3.jpg"); 
+    
+    background-size: cover;
+}
+
+
+
+
+.content p {
+    padding-top: 25px;
+    transform: translate(0, 50px);
+    transition: 0.5s;
+    display: flex;
+
+}
+
+
+
+.card:hover .content p {
+    transform: translate(0px, 50px);
+    transform: delay(.5s);
+   
+}
+
+
+
+
+
+
+
+
+
+/**************************      Contact form     **************************************/
+form { 
+   
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ccc;   
+   
+    
+}
+
+label, 
+input[type="text"], 
+input[type="email"], 
+input[type="radio"], 
+textarea { 
+   
+    margin-left: 25em;
+   
+    
+}
+input[type="radio" ]  { 
+   
+    display: inline-block;
+    margin-right: .2em;   
+    
+    margin-left: 25em; 
+    
+}
+
+
+
+
+input[type="submit" ]{ 
+
+    margin-left: 31em;
+    margin-bottom: .7em;
+    border-radius: .4em;
+} 
+
+legend { 
+    margin-left: 17em;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 200px) and (max-width: 1000px)  { 
+    .main-contact, form { 
+        width: 100%;
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*********        Footer           ***********************************************************************/
+
+footer {
+    width: 100%;
+    height: 730px;  
+    background: black;
+      
+  }
+  
+  
+  footer ul {
+      list-style-type: none;
+      display: inline;
+    padding-left: 0;
+    padding-top: 2em;
+  
+  }
+
+
+  footer ul.foot li {
+    width: 20%;
+    float: left;
+}
+
+  footer ul.foot li {
+      
+      width: 25%;
+  
+  }
+  
+  footer ul li a {
+      
+      text-decoration: none;
+      color: white;
+      font-family: Arial, sans-serif;
+      font-weight: normal;
+  
+  }
+  h4 {
+      color: white;
+      padding: .6em 0 .9em 0;
+}   
+
+@media screen and (min-width: 100px) and (max-width: 600px)  { 
+    footer ul,
+    footer ul.foot li{ 
+        width: 50%;
+        min-width: 400px;
+       
+        
+    }
+}   
